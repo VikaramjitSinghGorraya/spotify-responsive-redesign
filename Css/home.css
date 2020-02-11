@@ -1,0 +1,105 @@
+/*-------------Main Section Styling-----------*/
+.container{
+    display: flex;
+    bottom: 0;
+    height: 82vh;
+}
+.image-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
+}
+.lady-image{
+    background-image: url("../Images/landing-page-girl.png");
+    background-position: bottom left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 82vh;
+    max-width: 30vw;
+}
+.info-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 3;
+}
+.info-div h1,h3,a{
+    margin: 0;
+    color: white;
+}
+button{
+    color: white;
+    background-color: #1762A7;
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: .9rem;
+    border: none;
+}
+
+/*---------Circles Styling--------*/
+.circle1{
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    background-color: rgb(188, 58, 128, .1);
+    top: 13vh;
+    left: 20vw;
+    z-index: -1;
+}
+.circle2{
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+    background-color: rgb(52, 87, 178, .1);
+    top: 55vh;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.circle3{
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+.circle3::before {
+    content: '';
+    transform: translate(40%, 40%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgb(52, 87, 178, .1);
+}
+
+/*----------Media Queries----------*/
+@media  screen and (max-width: 960px) {
+    .info-div{
+        align-items: center;
+        text-align: center;
+        margin-left: 5rem;
+        justify-content:center;
+    }
+    .info-div h1{
+        font-size: 2rem;
+    }
+    .info-div h3{
+        font-size: 1rem;
+    }
+    .info-div h1,h3,a{
+        margin-top: 1rem;
+    }
+    .image-wrapper{
+        display: none;
+    }
+    .circle3{
+        display: none;
+    }
+}
