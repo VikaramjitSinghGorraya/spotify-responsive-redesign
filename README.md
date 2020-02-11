@@ -1,6 +1,6 @@
 # spotify-responsive-redesign
 
-## The page has been made mobile firendly using only HTML5 and CSS3. The screen shots showing the page have been attached below:-
+## The pages has been made mobile firendly using only HTML5 and CSS3. The screen shots showing the page have been attached below:-
 <img src="ScreenShots/Screenshot 1.png">
 <img src="ScreenShots/Screenshot 2.png">
 <img src="ScreenShots/Screenshot 3.png">
